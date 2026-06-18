@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pixel Hunt Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <div id="setup-screen">
+    <h1>Pixel Hunt</h1>
+    <label>Choose difficulty:
+      <select id="difficulty">
+        <option value="">--Please choose an option--</option>
+        <option value="lazy">Lazy</option>
+        <option value="normal">Normal</option>
+        <option value="catchme">Catch me if you can</option>
+      </select>
+    </label>
+    <label>Choose color:
+      <select id="color">
+        <option value="">--Please choose an option--</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+      </select>
+    </label>
+    <button id="start-btn">Start</button>
+  </div>
+
+  <div id="game-screen">
+    <p id="score-display">score: 0</p>
+    <p id="timer-display">time left for click: --</p>
+    <div id="pixel"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
