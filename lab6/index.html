@@ -1,1 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lights Out</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
+  <h1>Lights Out</h1>
+
+  <div id="controls">
+    <label>Choose level:
+      <select id="level-select">
+        <option value="">--Please choose--</option>
+        <option value="a">Level A (min 7 steps)</option>
+        <option value="b">Level B (min 8 steps)</option>
+        <option value="c">Level C (min 9 steps)</option>
+      </select>
+    </label>
+    <button id="load-btn">Load</button>
+  </div>
+
+  <div id="game-area" style="display:none;">
+    <p id="steps-display">Steps: 0</p>
+    <div id="grid"></div>
+    <button id="reset-btn">Reset</button>
+  </div>
+
+  <div id="win-message" style="display:none;">
+    <p>🎉 You win! Steps: <span id="win-steps"></span></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
