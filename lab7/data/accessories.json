@@ -1,1 +1,40 @@
-
+{
+  "category": "Accessories",
+  "items": [
+    {
+      "id": 1,
+      "name": "New Era 59FIFTY Cap",
+      "shortname": "new-era-cap",
+      "description": "New Era 59FIFTY fitted cap. Classic flat brim streetwear style.",
+      "price": 899
+    },
+    {
+      "id": 2,
+      "name": "Nike Swoosh Belt",
+      "shortname": "nike-belt",
+      "description": "Nike classic swoosh belt. Adjustable, fits all sizes.",
+      "price": 499
+    },
+    {
+      "id": 3,
+      "name": "Adidas Crossbody Bag",
+      "shortname": "adidas-bag",
+      "description": "Adidas compact crossbody bag. Multiple compartments, daily use.",
+      "price": 799
+    },
+    {
+      "id": 4,
+      "name": "Ralph Lauren Wool Scarf",
+      "shortname": "rl-scarf",
+      "description": "Ralph Lauren premium wool scarf. Warm and stylish winter accessory.",
+      "price": 1199
+    },
+    {
+      "id": 5,
+      "name": "Lacoste Leather Wallet",
+      "shortname": "lacoste-wallet",
+      "description": "Lacoste slim leather wallet. Multiple card slots, premium finish.",
+      "price": 999
+    }
+  ]
+}
