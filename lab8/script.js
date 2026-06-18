@@ -3,7 +3,13 @@ var hamburger = document.getElementById("hamburger");
 var navMenu = document.getElementById("nav-menu");
 
 hamburger.addEventListener("click", function () {
-  navMenu.classList.toggle("open");
+  if (navMenu.classList.contains("open")) {
+    navMenu.classList.remove("open");
+    navMenu.style.maxHeight = "0";
+  } else {
+    navMenu.classList.add("open");
+    navMenu.style.maxHeight = "300px";
+  }
 });
 
 // CAROUSEL
@@ -19,14 +25,15 @@ var autoTimer = null;
 
 // Створюємо індикатори
 for (var i = 0; i < total; i++) {
-  var dot = document.createElement("button");
-  dot.className = "dot" + (i === 0 ? " active" : "");
-  dot.dataset.index = i;
-  dot.addEventListener("click", function () {
-    goTo(parseInt(this.dataset.index));
-    resetTimer();
-  });
-  indicatorsEl.appendChild(dot);
+  (function(index) {
+    var dot = document.createElement("button");
+    dot.className = "dot" + (index === 0 ? " active" : "");
+    dot.addEventListener("click", function () {
+      goTo(index);
+      resetTimer();
+    });
+    indicatorsEl.appendChild(dot);
+  })(i);
 }
 
 function getDots() {
@@ -65,5 +72,4 @@ function resetTimer() {
   startTimer();
 }
 
-// Запуск автоперемикання
 startTimer();
