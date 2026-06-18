@@ -1,1 +1,26 @@
-
+[
+  {
+    "id": 1,
+    "name": "T-Shirts",
+    "shortname": "tshirts",
+    "notes": "Graphic tees, branded and vintage styles."
+  },
+  {
+    "id": 2,
+    "name": "Jeans",
+    "shortname": "jeans",
+    "notes": "Slim, straight and relaxed fit denim."
+  },
+  {
+    "id": 3,
+    "name": "Hoodies",
+    "shortname": "hoodies",
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  {
+    "id": 4,
+    "name": "Accessories",
+    "shortname": "accessories",
+    "notes": ""
+  }
+]
