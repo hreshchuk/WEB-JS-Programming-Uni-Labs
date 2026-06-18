@@ -1,1 +1,47 @@
-
+{
+  "category": "Hoodies",
+  "items": [
+    {
+      "id": 1,
+      "name": "Nike Club Hoodie",
+      "shortname": "nike-club",
+      "description": "Nike Club fleece hoodie. Warm and comfortable, regular fit.",
+      "price": 1499
+    },
+    {
+      "id": 2,
+      "name": "Adidas Trefoil Hoodie",
+      "shortname": "adidas-trefoil",
+      "description": "Adidas Originals trefoil hoodie. Classic streetwear style.",
+      "price": 1399
+    },
+    {
+      "id": 3,
+      "name": "Champion Reverse Weave",
+      "shortname": "champion",
+      "description": "Champion reverse weave hoodie. Premium heavyweight cotton.",
+      "price": 1699
+    },
+    {
+      "id": 4,
+      "name": "H&M Basic Hoodie",
+      "shortname": "hm-basic",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "price": 599
+    },
+    {
+      "id": 5,
+      "name": "Stussy Pullover Hoodie",
+      "shortname": "stussy",
+      "description": "Stussy classic pullover hoodie. Streetwear icon, oversized fit.",
+      "price": 1899
+    },
+    {
+      "id": 6,
+      "name": "Carhartt WIP Hoodie",
+      "shortname": "carhartt",
+      "description": "Carhartt WIP chase hoodie. Durable workwear-inspired style.",
+      "price": 2199
+    }
+  ]
+}
