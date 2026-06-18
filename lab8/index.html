@@ -1,1 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 8 — Adaptive Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
+  <!-- НАВІГАЦІЯ -->
+  <nav id="navbar">
+    <button id="hamburger" aria-label="Menu">&#9776;</button>
+    <ul id="nav-menu">
+      <li><a href="#"><span class="icon">🏠</span><span class="label">Home</span></a></li>
+      <li><a href="#"><span class="icon">📦</span><span class="label">Catalog</span></a></li>
+      <li><a href="#"><span class="icon">⭐</span><span class="label">Specials</span></a></li>
+      <li><a href="#"><span class="icon">📞</span><span class="label">Contact</span></a></li>
+    </ul>
+  </nav>
+
+  <!-- КАРУСЕЛЬ -->
+  <section class="carousel-section">
+    <div class="carousel">
+      <div class="carousel-track-wrapper">
+        <div class="carousel-track">
+          <div class="slide"><img src="https://placehold.co/900x400/222/f9c74f?text=Slide+1" alt="Slide 1"></div>
+          <div class="slide"><img src="https://placehold.co/900x400/e63946/fff?text=Slide+2" alt="Slide 2"></div>
+          <div class="slide"><img src="https://placehold.co/900x400/2b9348/fff?text=Slide+3" alt="Slide 3"></div>
+          <div class="slide"><img src="https://placehold.co/900x400/023e8a/fff?text=Slide+4" alt="Slide 4"></div>
+        </div>
+      </div>
+      <button class="carousel-btn prev" id="prev">&#8249;</button>
+      <button class="carousel-btn next" id="next">&#8250;</button>
+      <div class="indicators" id="indicators"></div>
+    </div>
+  </section>
+
+  <!-- ЗОБРАЖЕННЯ ТІЛЬКИ ДЛЯ LARGE -->
+  <section class="large-only images-section">
+    <h2>Large screen only</h2>
+    <div class="images-row">
+      <img src="https://placehold.co/400x250/333/fff?text=Large+Only+1" alt="Large 1">
+      <img src="https://placehold.co/400x250/555/fff?text=Large+Only+2" alt="Large 2">
+    </div>
+  </section>
+
+  <!-- ЗОБРАЖЕННЯ ТІЛЬКИ ДЛЯ MEDIUM -->
+  <section class="medium-only images-section">
+    <h2>Medium screen only</h2>
+    <div class="images-row">
+      <img src="https://placehold.co/400x250/e63946/fff?text=Medium+Only+1" alt="Medium 1">
+      <img src="https://placehold.co/400x250/2b9348/fff?text=Medium+Only+2" alt="Medium 2">
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
