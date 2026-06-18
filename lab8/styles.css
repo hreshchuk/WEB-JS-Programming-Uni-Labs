@@ -1,1 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+/* ===================== NAV ===================== */
+#navbar {
+  background: #222;
+  padding: 0 20px;
+  position: relative;
+}
+
+#hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.8rem;
+  cursor: pointer;
+  padding: 14px 0;
+}
+
+#nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 8px;
+}
+
+#nav-menu li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 18px;
+  color: #fff;
+  text-decoration: none;
+  gap: 4px;
+}
+
+#nav-menu li a:hover {
+  background: #444;
+}
+
+#nav-menu .icon {
+  font-size: 1.4rem;
+}
+
+#nav-menu .label {
+  font-size: 0.75rem;
+}
+
+/* ===================== MEDIUM NAV ===================== */
+@media (max-width: 767px) {
+  #hamburger {
+    display: block;
+  }
+
+  #nav-menu {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    background: #333;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease;
+  }
+
+  #nav-menu.open {
+    display: flex;
+    max-height: 300px;
+  }
+
+  #nav-menu li a {
+    flex-direction: row;
+    gap: 12px;
+    padding: 12px 20px;
+    justify-content: flex-start;
+  }
+
+  #nav-menu .label {
+    font-size: 1rem;
+  }
+}
+
+/* ===================== CAROUSEL ===================== */
+.carousel-section {
+  padding: 30px 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.carousel-track-wrapper {
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.45);
+  color: #fff;
+  border: none;
+  font-size: 2.5rem;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  z-index: 10;
+}
+
+.carousel-btn:hover {
+  background: rgba(0,0,0,0.7);
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.indicators {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 0 8px;
+  background: #222;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #888;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s;
+}
+
+.dot.active {
+  background: #f9c74f;
+}
+
+/* ===================== IMAGES ===================== */
+.images-section {
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.images-section h2 {
+  margin-bottom: 16px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.images-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.images-row img {
+  border-radius: 8px;
+  max-width: 100%;
+  flex: 1;
+}
+
+/* Large only — показуємо тільки на >=768px */
+.large-only {
+  display: block;
+}
+
+/* Medium only — показуємо тільки на <768px */
+.medium-only {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .large-only {
+    display: none;
+  }
+  .medium-only {
+    display: block;
+  }
+}
