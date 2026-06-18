@@ -1,1 +1,40 @@
-
+{
+  "category": "T-Shirts",
+  "items": [
+    {
+      "id": 1,
+      "name": "Mister Tee Graphic Tee",
+      "shortname": "mister-tee",
+      "description": "Bold graphic print tee from Mister Tee. Oversized fit, 100% cotton.",
+      "price": 599
+    },
+    {
+      "id": 2,
+      "name": "Ralph Lauren Polo Tee",
+      "shortname": "ralph-lauren",
+      "description": "Classic Ralph Lauren polo tee. Premium quality, slim fit.",
+      "price": 1299
+    },
+    {
+      "id": 3,
+      "name": "Lacoste Basic Tee",
+      "shortname": "lacoste",
+      "description": "Lacoste essential tee. Comfortable everyday wear, regular fit.",
+      "price": 1099
+    },
+    {
+      "id": 4,
+      "name": "Iron Maiden Band Tee",
+      "shortname": "iron-maiden",
+      "description": "Vintage style Iron Maiden band tee. Washed black, oversized.",
+      "price": 749
+    },
+    {
+      "id": 5,
+      "name": "New Era Logo Tee",
+      "shortname": "new-era",
+      "description": "New Era streetwear tee with embroidered logo. Regular fit.",
+      "price": 849
+    }
+  ]
+}
