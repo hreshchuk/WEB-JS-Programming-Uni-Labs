@@ -1,1 +1,40 @@
-
+{
+  "category": "Jeans",
+  "items": [
+    {
+      "id": 1,
+      "name": "Reserved Slim Jeans",
+      "shortname": "reserved-slim",
+      "description": "Reserved slim fit jeans. Dark wash, stretch denim, comfortable wear.",
+      "price": 899
+    },
+    {
+      "id": 2,
+      "name": "Colin's Straight Jeans",
+      "shortname": "colins-straight",
+      "description": "Colin's classic straight fit jeans. Medium wash, durable denim.",
+      "price": 799
+    },
+    {
+      "id": 3,
+      "name": "Denim Co. Relaxed Jeans",
+      "shortname": "denim-co",
+      "description": "Denim Co. relaxed fit jeans. Light wash, baggy style.",
+      "price": 699
+    },
+    {
+      "id": 4,
+      "name": "Terranova Skinny Jeans",
+      "shortname": "terranova",
+      "description": "Terranova skinny fit jeans. Black wash, stretchy material.",
+      "price": 649
+    },
+    {
+      "id": 5,
+      "name": "TU Classic Jeans",
+      "shortname": "tu-classic",
+      "description": "TU classic straight jeans. Versatile everyday denim, regular fit.",
+      "price": 749
+    }
+  ]
+}
